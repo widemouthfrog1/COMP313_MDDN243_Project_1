@@ -241,7 +241,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.395}
+    pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 1}
     newSize: {x: 3, y: 3}
     adaptiveTilingThreshold: 0.5
@@ -304,8 +304,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ad32b9beb64e41346a3d385a3ddef061, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: d56d2980254cfab4a9fa8384de767165, type: 3}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -366,7 +366,7 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.395}
+    pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 1}
     newSize: {x: 3, y: 3}
     adaptiveTilingThreshold: 0.5
@@ -390,9 +390,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d43054ed25decc4fb096b1005b62ca8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toSquare: 
-  toCircle: 
-  toTriangle: 
-  rotateLeft: 
-  rotateRight: 
-  extendPistons: 
+  toSquare: i
+  toCircle: o
+  toTriangle: p
+  rotateLeft: a,left
+  rotateRight: d,right
+  extendPistons: space,up
+  squareSprite: {fileID: 21300000, guid: d56d2980254cfab4a9fa8384de767165, type: 3}
+  squareColour: {r: 1, g: 0, b: 0, a: 0}
+  circleSprite: {fileID: 21300000, guid: d43562a38a4724847bc167fcad81b7ba, type: 3}
+  circleColour: {r: 0, g: 0, b: 1, a: 0}
+  triangleSprite: {fileID: 21300000, guid: c18a10bd412536d4b81e27c0aa671caf, type: 3}
+  triangleColour: {r: 1, g: 1, b: 0, a: 0}

@@ -51,7 +51,13 @@ public class Player_Script : MonoBehaviour
     //FixedUpdate is called once every physics calculation
     void FixedUpdate()
     {
-        foreach(string control in toSquareControls)
+        handleControls();
+        updateSprite();
+    }
+
+    private void handleControls()
+    {
+        foreach (string control in toSquareControls)
         {
             if (Input.GetKeyDown(control))
             {
@@ -73,6 +79,36 @@ public class Player_Script : MonoBehaviour
             {
                 mode = (int)PLAYER_MODE.TRIANGLE;
                 break;//make sure code isn't called twice for multiple key presses
+            }
+        }
+    }
+
+    private void updateSprite()
+    {
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+
+        if (mode == (int)PLAYER_MODE.SQUARE)
+        {
+            if (!spriteRenderer.sprite.Equals(squareSprite))
+            {
+                spriteRenderer.sprite = squareSprite;
+                spriteRenderer.color = squareColour;
+            }
+        }
+        if (mode == (int)PLAYER_MODE.CIRCLE)
+        {
+            if (!spriteRenderer.sprite.Equals(circleSprite))
+            {
+                spriteRenderer.sprite = circleSprite;
+                spriteRenderer.color = circleColour;
+            }
+        }
+        if (mode == (int)PLAYER_MODE.TRIANGLE)
+        {
+            if (!spriteRenderer.sprite.Equals(triangleSprite))
+            {
+                spriteRenderer.sprite = triangleSprite;
+                spriteRenderer.color = triangleColour;
             }
         }
     }
