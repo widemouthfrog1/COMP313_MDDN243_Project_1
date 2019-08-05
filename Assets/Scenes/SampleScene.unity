@@ -535,7 +535,7 @@ GameObject:
   - component: {fileID: 1347798863}
   - component: {fileID: 1347798868}
   - component: {fileID: 1347798867}
-  - component: {fileID: 1347798869}
+  - component: {fileID: 1347798870}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -696,7 +696,7 @@ PolygonCollider2D:
     - - {x: -0.433, y: -0.25}
       - {x: 0.433, y: -0.25}
       - {x: 0, y: 0.5}
---- !u!114 &1347798869
+--- !u!114 &1347798870
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -708,15 +708,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d43054ed25decc4fb096b1005b62ca8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toSquare: i
-  toCircle: o
-  toTriangle: p
-  rotateLeft: a,left
-  rotateRight: d,right
-  extendPistons: space,up
   squareSprite: {fileID: 21300000, guid: d56d2980254cfab4a9fa8384de767165, type: 3}
   squareColour: {r: 1, g: 0, b: 0, a: 1}
   circleSprite: {fileID: 21300000, guid: d43562a38a4724847bc167fcad81b7ba, type: 3}
-  circleColour: {r: 0, g: 0, b: 1, a: 1}
+  circleColour: {r: 0, g: 1, b: 0, a: 1}
   triangleSprite: {fileID: 21300000, guid: c18a10bd412536d4b81e27c0aa671caf, type: 3}
-  triangleColour: {r: 1, g: 1, b: 0, a: 1}
+  triangleColour: {r: 0, g: 0, b: 1, a: 1}
+  rotation: 0
